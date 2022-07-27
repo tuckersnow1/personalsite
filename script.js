@@ -44,7 +44,7 @@ $("#img1").on({
     $("#change-little-image").fadeOut("slow", function () {
       $("#change-little-image").attr(
         "src",
-        "personalsite/imgs/card-imgs/little/little1.png"
+        "/personalsite/imgs/card-imgs/little/little1.png"
       );
       $("#change-little-image").fadeIn("slow");
     });
@@ -55,7 +55,7 @@ $("#img2").on({
     $("#change-little-image").fadeOut("slow", function () {
       $("#change-little-image").attr(
         "src",
-        "personalsite/imgs/card-imgs/little/little2.png"
+        "/personalsite/imgs/card-imgs/little/little2.png"
       );
       $("#change-little-image").fadeIn("slow");
     });
@@ -67,7 +67,7 @@ $("#img3").on({
       $("#change-little-image").attr(
         "src",
 
-        "personalsite/imgs/card-imgs/little/little3.png"
+        "/personalsite/imgs/card-imgs/little/little3.png"
       );
       $("#change-little-image").fadeIn("slow");
     });
