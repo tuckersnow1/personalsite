@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="large">
+      <div class="main">
+        <div class="header">
+          <h1>> Tucker Snow‎ ‎ <span class="blinker">&#32;</span></h1>
+
+          <p>Sophomore at George Mason Universty studying Computer Science</p>
+        </div>
+
+        <div class="navbar">
+          <button class="nav-link nav-link-ani" id="abt-btn">about</button>
+          <button class="nav-link nav-link-ani" id="side-btn">
+            side projs
+          </button>
+          <a
+            href="./imgs/Tucker Snow Resume.pdf"
+            download="resume"
+            class="nav-link nav-link-ani"
+          >
+            resume download
+          </a>
+          <!-- <button class="nav-link nav-link-ani" href="#">education</button> -->
+          <!-- <button class="nav-link nav-link-ani" href="#">resume</button> -->
+        </div>
+      </div>
+
+      <!-- ABOUT DIV -->
+      <div class="abt-container" id="abt-container">
+        <img src="./imgs/profile.jpeg" alt="Tucker Profile" class="profile" />
+        <p class="abt">
+          I am currently a Dean's List student at George Mason University
+          studying Computer Science. I have large ambitions, and to achieve
+          these I dedicate my time to learning new technologies to gain new
+          understandings on software development
+        </p>
+      </div>
+      <div class="fav-tech-container" id="fav-tech-container">
+        <h1 class="tech-head">my fav technologies!</h1>
+        <div class="tech-imgs">
+          <img src="./imgs/swift.png" alt="swift" class="tech-img" />
+          <img src="./imgs/react.png" alt="swift" class="tech-img" />
+          <img src="./imgs/python.png" alt="swift" class="tech-img" />
+          <img src="./imgs/c.png" alt="swift" class="tech-img" />
+          <img src="./imgs/php.png" alt="swift" class="tech-img" />
+          <img src="./imgs/git.png" alt="swift" class="tech-img" />
+        </div>
+      </div>
+
+      <!-- SIDEPROJS -->
+      <div class="scroll" id="scroll"></div>
+      <div class="side-cards" id="side-cards">
+        <div class="card-wtm" id="card-wtm">
+          <!-- <div class="controls">
+            <button class="switch1" id="img1"></button>
+            <button class="switch2" id="img2"></button>
+            <button class="switch3" id="img3"></button>
+          </div> -->
+          <img
+            src="./imgs/card-imgs/wtm/wtm.jpeg"
+            alt=""
+            id="change-image"
+            class="wtm-img"
+          />
+          <img
+            src="./imgs/card-imgs/wtm/wtm2.jpeg"
+            alt=""
+            id="change-image"
+            class="wtm-img"
+          />
+          <img
+            src="./imgs/card-imgs/wtm/wtm3.PNG"
+            alt=""
+            id="change-image"
+            class="wtm-img"
+          />
+
+          <div class="content-wtn">
+            <div class="about-wtm">
+              <h2 class="h3-wtm">wtm iOS app</h2>
+              <p class="p-wtm">
+                I developed an application that allows users to create accounts
+                linked to their University and post anonymously on a feed, post
+                events, rate fraternities, and post videos. This application is
+                availbale on the app store.
+              </p>
+              <div class="project-skills">
+                <span class="project-skill">SwiftUI</span>
+                <span class="project-skill">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-little">
+          <img
+            src="./imgs/card-imgs/little/little1.png"
+            alt=""
+            id="change-little-image"
+            class="little-img"
+          />
+          <div class="controls">
+            <button class="switch1" id="img1"></button>
+            <button class="switch2" id="img2"></button>
+            <button class="switch3" id="img3"></button>
+          </div>
+
+          <div class="content-little">
+            <div class="about-little">
+              <h2 class="h3-little">Little Miss Music</h2>
+              <p class="p-little">
+                This website uses the Spotify API to pull users top artists,
+                genres, and tracks. Using this information it pulls from a json
+                listing possible additions to the viral meme little miss. This
+                application was large on social media while the meme was
+                current. You can visit it
+                <a href="http://littlemissmusic.co" class="little-href">here</a>
+              </p>
+              <div class="project-skills">
+                <span class="project-skill">HTML</span>
+                <span class="project-skill">CSS</span>
+                <span class="project-skill">JAVASCRIPT</span>
+                <span class="project-skill">JQUERY</span>
+                <span class="project-skill">NODE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-nba">
+          <img
+            src="./imgs/card-imgs/nba/nba.jpeg"
+            alt=""
+            id="change-image"
+            class="nba-img"
+          />
+
+          <div class="content-nba">
+            <div class="about-nba">
+              <h2 class="h3-nba">NBA discord bot</h2>
+              <p class="p-nba">
+                This Discord bot allows users to quickly search the NBA database
+                for a wide range of options. Top scorers, blocks per game,
+                compare teams from different eras, compare players, top 3 point
+                percent shooters, and more.
+              </p>
+              <div class="project-skills">
+                <span class="project-skill">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-undercut"></div>
+      </div>
+
+      <!-- RESUME -->
+    </div>
+    <script src="./scripts/script.js" async defer></script>
+  </body>
+</html>
