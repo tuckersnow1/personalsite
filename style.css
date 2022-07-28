@@ -12,12 +12,17 @@ html {
 
 body {
   background-color: #010e1b;
+  margin-left: 40px;
+  margin-right: 40px;
+  overflow-x: hidden;
+}
+.large {
+  margin-left: 100px;
 }
 .header {
   font-family: "Poppins";
   color: white;
   text-align: left;
-  margin: 275px 225px;
   margin-top: 50px;
 }
 span {
@@ -52,9 +57,8 @@ p {
 .navbar {
   font-family: "Poppins";
   text-align: left;
-  margin: 200px 207px;
-  margin-top: -225px;
-  margin-bottom: 575px;
+  margin-left: -10px;
+  margin-bottom: 700px;
 }
 
 .nav-link {
@@ -99,6 +103,7 @@ p {
   align-items: center;
   margin-bottom: 300px;
 }
+
 .profile {
   border-radius: 50%;
   border-style: solid;
@@ -107,19 +112,16 @@ p {
   margin-right: 20px;
   width: 300px;
   height: 300px;
-  margin-left: 200px;
 }
 
 .abt {
   font-family: "Poppins";
   color: white;
   width: 550px;
-  float: right;
+  margin-right: 2vh;
 }
 .tech-imgs {
   margin-bottom: 100px;
-  margin-left: 50px;
-  margin-right: 40px;
 }
 .tech-img {
   width: 210px;
@@ -140,11 +142,10 @@ p {
   margin-bottom: 100px;
 }
 .side-cards {
+  flex-wrap: wrap;
   font-family: "Poppins";
   text-align: left;
-  margin: 200px 207px;
-
-  margin-bottom: 575px;
+  margin-right: 100px;
 }
 
 .card-wtm {
@@ -153,6 +154,7 @@ p {
   border-radius: 1%;
   margin-bottom: 60px;
   box-shadow: 0 5px 10px 0 white;
+  max-width: 100%;
 }
 .h2-wtm {
   font-weight: 500;
@@ -170,13 +172,15 @@ p {
   color: #525f7f;
   display: inline-block;
   position: relative;
+  width: 100%;
 }
 
 .wtm-img {
   margin-left: 70px;
   margin-right: 50px;
-  width: 200px;
-  height: 350px;
+  max-width: 200px;
+  max-height: 350px;
+
   border: solid #010e1b;
   border-width: 0.5rem;
   border-radius: 10%;
@@ -212,9 +216,12 @@ p {
 
 .nba-img {
   margin-left: 70px;
-  margin-right: 50px;
-  width: 350px;
-  height: 425px;
+  margin-right: 70px;
+
+  max-width: 350px;
+  max-height: 425px;
+  height: 100%;
+  width: 100%;
   border: solid #010e1b;
   border-width: 0.5rem;
   border-radius: 10%;
@@ -228,6 +235,7 @@ p {
   padding: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
+  margin-top: 20px;
   font-family: "Poppins";
   color: #010e1b;
 }
@@ -238,6 +246,7 @@ p {
   border-radius: 1%;
   margin-bottom: 60px;
   box-shadow: 0 5px 10px 0 rgb(255, 255, 255);
+  flex: auto;
 }
 .h2-little {
   font-weight: 500;
@@ -258,10 +267,11 @@ p {
 }
 
 .little-img {
-  margin-left: 100px;
-  margin-right: 50px;
-  width: 800px;
-  height: 500px;
+  margin-left: 120px;
+  margin-right: 70px;
+  max-width: 800px;
+  max-height: 500px;
+  width: 100%;
   border: solid #010e1b;
   border-width: 0.5rem;
   border-radius: 10%;
@@ -279,12 +289,85 @@ p {
   height: 25px;
   width: 25px;
   background-color: #011b36;
-  margin-left: 225px;
+  margin-left: 245px;
   margin-top: 20px;
   display: inline-block;
   position: relative;
 }
 
+.h1-title {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 40px;
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.h1-title::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: palegoldenrod;
+}
+
+.h1-title-ani::before {
+  width: 100%;
+  bottom: 10px;
+}
+
+.h1-abt-title {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 40px;
+  border: none;
+  background: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.h1-abt-title::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: palegoldenrod;
+}
+
+.h1-abt-title-ani::before {
+  width: 100%;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .wtm-img {
+    display: none;
+  }
+  .little-img {
+    display: none;
+  }
+  .controls button {
+    display: none;
+  }
+  .nba-img {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+}
 .little-href {
   text-decoration: none;
   color: palegoldenrod;
